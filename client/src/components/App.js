@@ -24,6 +24,3 @@ const App = () => (
 );
 
 export default App;
-
-// import all the stream files and  wireup the route
-//put semantic ui

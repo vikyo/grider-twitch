@@ -1,0 +1,21 @@
+L230
+convert streamCreate component into class based component to add helper methods
+import field, reduxform from redux-form
+connect component with reduxform
+add <form> and <Field name='' component={this.renderInput}>
+in renderInput use formProps to pass the value and onChange handler to the input elements and add labels to them
+add material ui classes to make the form look good
+
+L233
+Add the submit handler to thr form using the handleSubmit method provided by the redux-form library
+
+L234
+Add the validation to the tilte and description in form
+create a validate method and then use if statements to return an error object
+
+L235
+displaying errors
+pass validate method in the reduxForm 
+
+L236 & 7
+Display the error messages elegantly using error ui class
