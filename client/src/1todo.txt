@@ -1,9 +1,10 @@
-L234
-create a validate method and then use if statements to return an error object
+L247
+fetch all the stream types from actiontypes
+add the reducers to implement the cases fetch , create and edit
 
-L235
-displaying errors
-pass validate method in the reduxForm 
+L248
+install lodash
+deleting the stream using omit method
 
-L236 & 7
-Display the error messages elegantly using error ui class
+L249
+use lodash -.mapKeys to convert the [] of objects into object of objects

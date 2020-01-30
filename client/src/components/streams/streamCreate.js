@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { createStream } from '../../actions';
 
 class StreamCreate extends Component {
-    // For
+    // For error
     renderError = ({ touched, error }) => {
         if (touched && error) {
             return (

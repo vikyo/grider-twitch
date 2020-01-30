@@ -1,5 +1,6 @@
 import { SIGN_IN, SIGN_OUT, CREATE_STREAM, FETCH_STREAMS, FETCH_STREAM, DELETE_STREAM, EDIT_STREAM } from './actionTypes';
 import streams from '../apis/streams';
+// import _ from 'lodash';
 
 // Auth related Action Creators
 export const signIn = userId => {
@@ -77,7 +78,8 @@ export const deleteStream = id => async dispatch => {
         await streams.put(`/streams/${id}`);
 
         dispatch({
-            type: DELETE_STREAM
+            type: DELETE_STREAM,
+            payload: id
         });
     } catch (err) {
         console.log(err);
