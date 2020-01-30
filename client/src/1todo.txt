@@ -8,3 +8,9 @@ deleting the stream using omit method
 
 L249
 use lodash -.mapKeys to convert the [] of objects into object of objects
+
+L251
+Rendering the streams
+
+L252
+Associating users with the streams
