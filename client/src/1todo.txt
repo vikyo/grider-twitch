@@ -1,16 +1,16 @@
-L247
-fetch all the stream types from actiontypes
-add the reducers to implement the cases fetch , create and edit
+L262 -- navigation to proper stream edit page
+when clicked on the edit link the page navigates to streams/edit/:id
 
-L248
-install lodash
-deleting the stream using omit method
+L263:
+tell the stream edit page that which stream is selected sing props.match
 
-L249
-use lodash -.mapKeys to convert the [] of objects into object of objects
+L264:
+use connect method and connect stream edit comp to the state to selectthe particular stream to be edited 
 
-L251
-Rendering the streams
+L266:
+convert edit stream comp into a class compoent and call fetch stream action creator and connect method to connect to the specific stream of that id
 
-L252
-Associating users with the streams
+L267: Refactor
+Create the StreamForm component as stream create comp and stream edit are using the same kind of UI so better for reusability purpose
+
+L268: refactoring stream create component
