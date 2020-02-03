@@ -82,12 +82,14 @@ export const editStream = (id, formValues) => async dispatch => {
 // Delete stream
 export const deleteStream = id => async dispatch => {
     try {
-        await streams.put(`/streams/${id}`);
+        await streams.delete(`/streams/${id}`);
 
         dispatch({
             type: DELETE_STREAM,
             payload: id
         });
+
+        history.push('/'); // Dynamic navigation to homepage once the stream is deleted
     } catch (err) {
         console.log(err);
     }

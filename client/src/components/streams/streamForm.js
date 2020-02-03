@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
+import { Link } from 'react-router-dom';
 
 class StreamForm extends Component {
     // For error
@@ -37,6 +38,9 @@ class StreamForm extends Component {
                 <button className='ui button primary' type='submit'>
                     Submit
                 </button>
+                <Link to='/' className='ui button'>
+                    Cancel
+                </Link>
             </form>
         );
     }
