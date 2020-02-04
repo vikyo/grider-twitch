@@ -8,6 +8,7 @@ import StreamForm from '../streams/streamForm';
 class StreamEdit extends Component {
     // L265:Component isolation: Every component needs to fetch its own data
     // the router does not provide the data
+    // Component fetching its own data in case we go to the link directly
     componentDidMount() {
         this.props.fetchStream(this.props.match.params.id);
     }

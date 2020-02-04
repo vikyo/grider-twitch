@@ -7,7 +7,7 @@ import history from '../../history';
 import { fetchStream, deleteStream } from '../../actions';
 
 class StreamDelete extends Component {
-    // Fetching its own data
+    // Component fetching its own data in case we go to the link directly
     componentDidMount() {
         this.props.fetchStream(this.props.match.params.id);
     }
