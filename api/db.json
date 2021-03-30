@@ -21,8 +21,8 @@
       "id": 4
     },
     {
-      "title": "test stream",
-      "description": "for testing purpose",
+      "title": "test stream updated after npm update and audit",
+      "description": "for update purpose",
       "userId": "102598731924802232617",
       "id": 9
     }
